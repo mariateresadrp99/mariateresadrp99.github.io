@@ -7,7 +7,7 @@
   <meta name="description" content="PhD researcher at University of Zurich working on AI ethics, multimodal models, fairness and bias, and the societal impact of AI.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
+ 
   <style>
     :root {
       --ink: #1a1a1a;
@@ -16,11 +16,11 @@
       --bg: #fdfcf9;
       --rule: #e4e0d8;
     }
-
+ 
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
+ 
     html { scroll-behavior: smooth; }
-
+ 
     body {
       font-family: 'EB Garamond', Georgia, serif;
       font-size: 18px;
@@ -31,7 +31,7 @@
       margin: 0 auto;
       padding: 80px 24px 120px;
     }
-
+ 
     /* ── Navigation ── */
     nav {
       font-family: 'JetBrains Mono', monospace;
@@ -40,20 +40,20 @@
       text-transform: uppercase;
       margin-bottom: 72px;
     }
-
+ 
     nav ul { list-style: none; display: flex; gap: 28px; }
-
+ 
     nav a {
       color: var(--muted);
       text-decoration: none;
       transition: color 0.15s;
     }
-
+ 
     nav a:hover { color: var(--accent); }
-
+ 
     /* ── Header ── */
     header { margin-bottom: 64px; }
-
+ 
     h1 {
       font-family: 'EB Garamond', Georgia, serif;
       font-size: 2.4em;
@@ -62,7 +62,7 @@
       color: var(--ink);
       margin-bottom: 6px;
     }
-
+ 
     .role {
       font-family: 'JetBrains Mono', monospace;
       font-size: 11px;
@@ -71,26 +71,26 @@
       color: var(--muted);
       margin-bottom: 32px;
     }
-
+ 
     .bio {
       font-size: 1em;
       line-height: 1.8;
       margin-bottom: 28px;
     }
-
+ 
     .bio p + p { margin-top: 1em; }
-
+ 
     .meta {
       font-size: 0.88em;
       color: var(--muted);
       line-height: 1.8;
     }
-
+ 
     .meta strong {
       color: var(--ink);
       font-weight: 500;
     }
-
+ 
     /* ── Links ── */
     a {
       color: var(--accent);
@@ -98,9 +98,9 @@
       border-bottom: 1px solid transparent;
       transition: border-color 0.15s;
     }
-
+ 
     a:hover { border-bottom-color: var(--accent); }
-
+ 
     .links {
       margin-top: 28px;
       font-family: 'JetBrains Mono', monospace;
@@ -110,28 +110,28 @@
       gap: 20px;
       flex-wrap: wrap;
     }
-
+ 
     .links a {
       color: var(--muted);
       border-bottom: 1px solid var(--rule);
       padding-bottom: 1px;
       transition: color 0.15s, border-color 0.15s;
     }
-
+ 
     .links a:hover {
       color: var(--accent);
       border-bottom-color: var(--accent);
     }
-
+ 
     .name-row {
       display: inline-flex;
       align-items: flex-start;
       gap: 24px;
       margin-bottom: 32px;
     }
-
+ 
     .name-text { flex: none; }
-
+ 
     .edu {
       font-family: 'JetBrains Mono', monospace;
       font-size: 10.5px;
@@ -140,7 +140,7 @@
       line-height: 1.7;
       margin-top: 6px;
     }
-
+ 
     .profile-photo {
       width: 130px;
       height: 130px;
@@ -149,12 +149,12 @@
       flex-shrink: 0;
       filter: grayscale(15%);
     }
-
+ 
     /* ── Sections ── */
     section {
       margin-bottom: 64px;
     }
-
+ 
     h2 {
       font-family: 'JetBrains Mono', monospace;
       font-size: 11px;
@@ -165,7 +165,7 @@
       padding-bottom: 10px;
       border-bottom: 1px solid var(--rule);
     }
-
+ 
     /* ── News ── */
     .news-item {
       display: grid;
@@ -175,7 +175,7 @@
       font-size: 0.94em;
       line-height: 1.65;
     }
-
+ 
     .news-date {
       font-family: 'JetBrains Mono', monospace;
       font-size: 11px;
@@ -183,9 +183,9 @@
       padding-top: 4px;
       white-space: nowrap;
     }
-
+ 
     .news-hidden { display: none; }
-
+ 
     .toggle-btn {
       font-family: 'JetBrains Mono', monospace;
       font-size: 11px;
@@ -199,46 +199,72 @@
       margin-top: 16px;
       transition: color 0.15s;
     }
-
+ 
     .toggle-btn:hover { color: var(--accent); }
-
+ 
     /* ── Publications ── */
     .pub {
       margin-bottom: 28px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
     }
-
+ 
+    .pub-body {
+      flex: 1;
+      min-width: 0;
+    }
+ 
     .pub-title {
       font-size: 1em;
       font-weight: 500;
       margin-bottom: 3px;
     }
-
+ 
     .pub-title a {
       color: var(--ink);
       border-bottom: 1px solid var(--rule);
     }
-
+ 
     .pub-title a:hover {
       color: var(--accent);
       border-bottom-color: var(--accent);
     }
-
+ 
     .pub-authors {
       font-size: 0.88em;
       color: var(--muted);
     }
-
+ 
     .pub-authors em {
       font-style: normal;
       color: var(--ink);
     }
-
+ 
     .pub-venue {
       font-size: 0.88em;
       color: var(--muted);
       font-style: italic;
     }
-
+ 
+    /* ── Venue Badge ── */
+    .venue-badge {
+      flex-shrink: 0;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9.5px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+      background: color-mix(in srgb, var(--accent) 5%, transparent);
+      padding: 3px 7px;
+      border-radius: 3px;
+      margin-top: 10px;
+      white-space: nowrap;
+      line-height: 1.5;
+    }
+ 
     .pub-group-label {
       font-family: 'JetBrains Mono', monospace;
       font-size: 10.5px;
@@ -247,7 +273,7 @@
       color: var(--muted);
       margin: 40px 0 22px;
     }
-
+ 
     /* ── Footer ── */
     footer {
       font-family: 'JetBrains Mono', monospace;
@@ -256,24 +282,26 @@
       padding-top: 32px;
       border-top: 1px solid var(--rule);
     }
-
+ 
     /* ── Responsive ── */
     @media (max-width: 600px) {
       body { padding: 48px 20px 80px; }
       h1 { font-size: 1.9em; }
-
+ 
       .news-item {
         grid-template-columns: 1fr;
         gap: 2px;
         margin-bottom: 22px;
       }
-
+ 
       .links { gap: 14px; }
+ 
+      .pub { gap: 12px; }
     }
   </style>
 </head>
 <body>
-
+ 
   <nav>
     <ul>
       <li><a href="#home">Home</a></li>
@@ -281,9 +309,9 @@
       <li><a href="#publications">Publications</a></li>
     </ul>
   </nav>
-
+ 
   <main>
-
+ 
     <!-- Home -->
     <header id="home">
       <div class="name-row">
@@ -293,7 +321,7 @@
         </div>
         <img src="Screenshot 2026-03-06 at 12.49.32.png" alt="Maria-Teresa De Rosa Palmini" class="profile-photo">
       </div>
-
+ 
       <div class="bio">
         <p>
           I am a 3rd-year PhD researcher at the Digital Society Initiative at the University of Zurich,
@@ -308,11 +336,11 @@
           interpretable, and aligned with human values.
         </p>
       </div>
-
+ 
       <div class="meta">
         <p><strong>Interests</strong>&ensp; Generative AI · Multimodal Models · Fairness &amp; Bias · Societal Impact of AI · Model Evaluation &amp; Explainability</p>
       </div>
-
+ 
       <div class="links">
         <a href="https://scholar.google.com/citations?user=i72FngEAAAAJ&hl=en" target="_blank">Google Scholar</a>
         <a href="https://www.linkedin.com/in/maria-teresa-de-rosa-palmini-67a890172/" target="_blank">LinkedIn</a>
@@ -320,11 +348,11 @@
         <a href="/cdn-cgi/l/email-protection#87eae6f5eee6f3e2f5e2f4e6a9e3e2f5e8f4e6f7e6ebeaeee9eec7e3f4eea9f2fdefa9e4ef">Email</a>
       </div>
     </header>
-
+ 
     <!-- News -->
     <section id="news">
       <h2>News</h2>
-
+ 
       <div class="news-visible">
         <div class="news-item">
           <span class="news-date">Feb 2026</span>
@@ -347,7 +375,7 @@
           <span>Attended the <a href="https://safeandtrustedai.org/safe-and-trusted-ai-summer-school/" target="_blank">Safe and Trusted AI Summer School</a> at Imperial College London.</span>
         </div>
       </div>
-
+ 
       <div class="news-hidden" id="moreNews">
         <div class="news-item">
           <span class="news-date">Jun 2025</span>
@@ -382,52 +410,64 @@
           <span>Started a PhD at the University of Zurich as part of the <em>The Canon of Latent Spaces</em> project (SNSF Ambizione Grant).</span>
         </div>
       </div>
-
+ 
       <button class="toggle-btn" id="toggleNews" onclick="toggleNews()">Show all ↓</button>
     </section>
-
+ 
     <!-- Publications -->
     <section id="publications">
       <h2>Publications</h2>
-
+ 
       <div class="pub">
-        <div class="pub-title">
-          <a href="https://openreview.net/pdf?id=Ix0vw6Mdzs" target="_blank">Synthetic History: Evaluating Visual Representation of the Past in Diffusion Models</a>
+        <span class="venue-badge">ICLR 2026</span>
+        <div class="pub-body">
+          <div class="pub-title">
+            <a href="https://openreview.net/pdf?id=Ix0vw6Mdzs" target="_blank">Synthetic History: Evaluating Visual Representation of the Past in Diffusion Models</a>
+          </div>
+          <div class="pub-authors"><em>Maria-Teresa De Rosa Palmini</em>, Eva Cetinić</div>
+          <div class="pub-venue">The Fourteenth International Conference on Learning Representations (ICLR 2026)</div>
         </div>
-        <div class="pub-authors"><em>Maria-Teresa De Rosa Palmini</em>, Eva Cetinić</div>
-        <div class="pub-venue">The Fourteenth International Conference on Learning Representations (ICLR 2026)</div>
       </div>
-
+ 
       <div class="pub">
-        <div class="pub-title">
-          <a href="https://dl.acm.org/doi/10.1145/3715275.3732158" target="_blank">Exploring Language Patterns of Prompts in Text-to-Image Generation and Their Impact on Visual Diversity</a>
+        <span class="venue-badge">FAccT 2025</span>
+        <div class="pub-body">
+          <div class="pub-title">
+            <a href="https://dl.acm.org/doi/10.1145/3715275.3732158" target="_blank">Exploring Language Patterns of Prompts in Text-to-Image Generation and Their Impact on Visual Diversity</a>
+          </div>
+          <div class="pub-authors"><em>Maria-Teresa De Rosa Palmini</em>, Eva Cetinić</div>
+          <div class="pub-venue">ACM Conference on Fairness, Accountability, and Transparency (FAccT 2025)</div>
         </div>
-        <div class="pub-authors"><em>Maria-Teresa De Rosa Palmini</em>, Eva Cetinić</div>
-        <div class="pub-venue">ACM Conference on Fairness, Accountability, and Transparency (FAccT 2025) </div>
       </div>
-
+ 
       <div class="pub">
-        <div class="pub-title">
-          <a href="https://link.springer.com/chapter/10.1007/978-3-031-92089-9_10" target="_blank">Civiverse: A Dataset for Analyzing User Engagement with Open-Source Text-to-Image Models</a>
+        <span class="venue-badge">ECCV Cegis</span>
+        <div class="pub-body">
+          <div class="pub-title">
+            <a href="https://link.springer.com/chapter/10.1007/978-3-031-92089-9_10" target="_blank">Civiverse: A Dataset for Analyzing User Engagement with Open-Source Text-to-Image Models</a>
+          </div>
+          <div class="pub-authors"><em>Maria-Teresa De Rosa Palmini</em>, Laura Wagner, Eva Cetinić</div>
+          <div class="pub-venue">Europian Conference on Computer Vision (ECCV 2024), CEGIS Workshop (Oral)</div>
         </div>
-        <div class="pub-authors"><em>Maria-Teresa De Rosa Palmini</em>, Laura Wagner, Eva Cetinić</div>
-        <div class="pub-venue">Europian Conference on Computer Vision (ECCV 2024), CEGIS Workshop (Oral)</div>
       </div>
-
+ 
       <p class="pub-group-label">Under Review</p>
-
+ 
       <div class="pub">
-        <div class="pub-title">
-          <a href="https://arxiv.org/abs/2511.11435" target="_blank">The Persistence of Cultural Memory: Investigating Multimodal Iconicity in Diffusion Models</a>
+        <span class="venue-badge" style="color: var(--muted); border-color: color-mix(in srgb, var(--muted) 30%, transparent); background: color-mix(in srgb, var(--muted) 5%, transparent);">arXiv</span>
+        <div class="pub-body">
+          <div class="pub-title">
+            <a href="https://arxiv.org/abs/2511.11435" target="_blank">The Persistence of Cultural Memory: Investigating Multimodal Iconicity in Diffusion Models</a>
+          </div>
+          <div class="pub-authors"><em>Maria-Teresa De Rosa Palmini</em>, Eva Cetinić</div>
         </div>
-        <div class="pub-authors"><em>Maria-Teresa De Rosa Palmini</em>, Eva Cetinić</div>
       </div>
-
+ 
     </section>
   </main>
-
+ 
   <footer>© 2026 Maria-Teresa De Rosa Palmini</footer>
-
+ 
   <script>
     function toggleNews() {
       const more = document.getElementById('moreNews');
