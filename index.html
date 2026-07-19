@@ -274,6 +274,50 @@
       margin: 40px 0 22px;
     }
  
+    /* ── Academic Service ── */
+    .service-group {
+      margin-bottom: 28px;
+    }
+ 
+    .service-group:last-child {
+      margin-bottom: 0;
+    }
+ 
+    .service-list {
+      list-style: none;
+      font-size: 0.94em;
+      color: var(--ink);
+      line-height: 1.9;
+    }
+ 
+    .service-list li {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1px solid var(--rule);
+      padding: 8px 0;
+    }
+ 
+    .service-list li:first-child {
+      padding-top: 0;
+    }
+ 
+    .service-list li:last-child {
+      border-bottom: none;
+    }
+ 
+    .service-venue {
+      color: var(--ink);
+    }
+ 
+    .service-year {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--muted);
+      white-space: nowrap;
+      padding-top: 2px;
+    }
+ 
     /* ── Footer ── */
     footer {
       font-family: 'JetBrains Mono', monospace;
@@ -307,6 +351,7 @@
       <li><a href="#home">Home</a></li>
       <li><a href="#news">News</a></li>
       <li><a href="#publications">Publications</a></li>
+      <li><a href="#service">Service</a></li>
     </ul>
   </nav>
  
@@ -470,6 +515,36 @@
       </div>
  
     </section>
+ 
+    <!-- Academic Service -->
+    <section id="service">
+      <h2>Academic Service</h2>
+ 
+      <div class="service-group">
+        <p class="pub-group-label" style="margin-top:0;">Conference Reviewing</p>
+        <ul class="service-list">
+          <li>
+            <span class="service-venue">ECCV — European Conference on Computer Vision</span>
+            <span class="service-year">2026</span>
+          </li>
+          <li>
+            <span class="service-venue">NeurIPS — Conference on Neural Information Processing Systems</span>
+            <span class="service-year">2026</span>
+          </li>
+        </ul>
+      </div>
+ 
+      <div class="service-group">
+        <p class="pub-group-label">Journal Reviewing</p>
+        <ul class="service-list">
+          <li>
+            <span class="service-venue">Computer Vision and Image Understanding</span>
+            <span class="service-year">2026</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+ 
   </main>
  
   <footer>© 2026 Maria-Teresa De Rosa Palmini</footer>
